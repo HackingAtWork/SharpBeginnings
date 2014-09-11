@@ -55,7 +55,7 @@ Assignments
 
 For assignments, look at:
 - coursera scala classes
-- SICP book
+- SICP book (CHapter 1 & 2)
 - www.CS50.tv
 - Interview questions
 - projecteuler.com
