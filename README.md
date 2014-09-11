@@ -12,33 +12,50 @@ Curriculum
 
 Part 1: Programming basics
 - Numbers (integers, floating point numbers)
-- String manipulation
 - Collections (Arrays, Tuples, List, Dictionary)
+- Strings (String manipulation)
 - Boolean logic (conditionals)
-- Functions
+- Mutable vs Immutable
 - Looping
-- Recursion
 
 Part 2: Applied F#
+- Functions (Higher Order Functions)
 - Pattern matching
-- Currying
-- Object Oriented Programming
-- Threading
-- Type Providers
+- Type Providers (parsing JSON, CSV, other format)
 - Network communication (REST, SOAP, WMQ)
-- Connecting to databases (Oracle, Sql Server)
-- FAKE (Make for F#)
 
 Part 3: Testing with F#
-- Canopy
-- Specflow with F#
-- TickSpec with F#
+- Unit Testing
+- Testing a website: Canopy & TickSpec with F#
 - Testing a SOAP endpoint
 - Testing a Messaging endpoint
 - Testing a REST endpoint
+- Connecting to databases (Oracle, Sql Server)
+- File I/O
 
-Specflow tests / workshop
------------------------------------
-- Simple Calculator
-- 
+Part 4: Advanced F#
+- Recursion
+- Currying
+- FAKE (Make for F#)
+- Threading
+ 
+Workshop
+---------
 
+For Part 1:
+- Sorting
+- String Deduplication
+- Fibonacci
+- Christmas tree problem
+
+Assignments
+------------
+- Fizz buzz
+- Christmas tree problem
+
+For assignments, look at:
+- coursera scala classes
+- SICP book
+- www.CS50.tv
+- Interview questions
+- projecteuler.com
