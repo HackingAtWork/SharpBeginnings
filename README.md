@@ -20,7 +20,7 @@ Curriculum
 
 *Note*: This is still in flux. More specflow/workshop assignments needed.
 
-Part 1: Programming basics
+*Part 1*: Programming basics
 - Numbers (integers, floating point numbers)
 - Collections (Arrays, Tuples, List, Dictionary)
 - Strings (String manipulation)
@@ -28,13 +28,13 @@ Part 1: Programming basics
 - Mutable vs Immutable
 - Looping
 
-Part 2: Applied F#
+*Part 2*: Applied F#
 - Functions (Higher Order Functions)
 - Pattern matching
 - Type Providers (parsing JSON, CSV, other format)
 - Network communication (REST, SOAP, WMQ)
 
-Part 3: Testing with F#
+*Part 3*: Testing with F#
 - Unit Testing
 - Testing a website: Canopy & TickSpec with F#
 - Testing a SOAP endpoint
@@ -43,7 +43,7 @@ Part 3: Testing with F#
 - Connecting to databases (Oracle, Sql Server)
 - File I/O
 
-Part 4: Advanced F#
+*Part 4*: Advanced F#
 - Recursion
 - Currying
 - FAKE (Make for F#)
