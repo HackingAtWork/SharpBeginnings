@@ -5,6 +5,16 @@ Introduction to Computer Programming using F#, taught through weekly lunchbag se
 
 Please keep in mind that this is a course for beginners.
 
+For Windows users, please follow theses instructions [here](http://fsharp.org/use/windows/). Once your system is setup, to build test your assignments, run the command:
+```bash
+fake.bat
+```
+
+For Unix (Ubuntu, Mac OSX, etc), please follow these instructions [here](http://fsharp.org/use/mac/). Once your system is setup, to build test your assignments, run the command:
+```bash
+./fake
+```
+
 Curriculum
 ---------------
 
