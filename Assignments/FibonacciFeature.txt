@@ -28,3 +28,11 @@ Scenario 5: The one where we find the fibonacci number of 4
 	Given a fibonacci sequence calculator
   When I ask for the Fibonacci number of 4
   Then the fib result should be 3
+
+Scenario 6: The one where we compute the first 100 fibonacci numbers
+	Given a fibonacci sequence calculator
+	When I ask for the first 100 numbers in the sequence
+  Then the fib result set length should be 10
+  And the fib set should contain 55
+  And the fib set should contain 34
+  And the fib set should contain 21

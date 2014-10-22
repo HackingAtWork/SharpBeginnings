@@ -22,15 +22,16 @@ Curriculum
 
 *Part 1*: Programming basics
 - Numbers (integers, floating point numbers)
+- Pattern matching
 - Collections (Arrays, Tuples, List, Dictionary)
 - Strings (String manipulation)
+- Recursion
 - Boolean logic (conditionals)
 - Mutable vs Immutable
 - Looping
 
 *Part 2*: Applied F#
 - Functions (Higher Order Functions)
-- Pattern matching
 - Type Providers (parsing JSON, CSV, other format)
 - Network communication (REST, SOAP, WMQ)
 
@@ -62,6 +63,7 @@ Assignments
 ------------
 - Fizz buzz
 - Christmas tree problem
+- build a telephone registry application
 
 For assignments, look at:
 - coursera scala classes

@@ -1,4 +1,4 @@
-﻿module FibonacciStepDefinition
+﻿module StringManipulationStepDefinition
 
 open TickSpec
 open NUnit.Framework
@@ -17,7 +17,9 @@ let fibonnaciSequence x=
   // need a range of numbers
   // need to convert that list of numbers in to fibonacci
   // need to select first x fibonacci numbers
-  {0..1}
+     seq {1..upperBound}
+     |> Seq.map fibonnaci
+     |> Seq.take x
     
 
 let [<Given>] ``a fibonacci sequence calculator`` ()= 
