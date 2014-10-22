@@ -23,4 +23,5 @@ type FeatureFixture (source:string) =
         definitions.GenerateScenarios(source,s)
 
 type CollectionFeature () = inherit FeatureFixture("SimpleCollectionFeature.txt")
-//type FibonacciFeature () = inherit FeatureFixture("FibonacciFeature.txt")
+type FibonacciFeature () = inherit FeatureFixture("FibonacciFeature.txt")
+//type StringFeature () = inherit FeatureFixture("StringManipulationFeature.txt")

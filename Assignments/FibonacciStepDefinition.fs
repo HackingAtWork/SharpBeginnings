@@ -17,9 +17,7 @@ let fibonnaciSequence x=
   // need a range of numbers
   // need to convert that list of numbers in to fibonacci
   // need to select first x fibonacci numbers
-     seq {1..upperBound}
-     |> Seq.map fibonnaci
-     |> Seq.take x
+  {0..1}
     
 
 let [<Given>] ``a fibonacci sequence calculator`` ()= 
