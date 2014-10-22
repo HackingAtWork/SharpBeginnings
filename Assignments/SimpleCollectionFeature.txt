@@ -1,7 +1,9 @@
 ﻿
 Feature: Simple Collection learning
 
-Scenario 1: The one where you find that 6 is even 
+Scenario 1: The one where a the collection has numbers divisible by 6
 	Given a collection from 1 to 15
-	When I ask what number 6 is
-	Then It should say it is even
+	When I ask if the collection has items divisible by 6
+  Then the result set length should be 2
+  And the set should contain 12
+  And the set should contain 6

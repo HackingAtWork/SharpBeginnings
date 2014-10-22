@@ -4,16 +4,19 @@ open TickSpec
 open NUnit.Framework
 open FsUnit
 
-let mutable simpleCollection = []
-let mutable numberToEvaluate = 0
+let mutable simpleCollection:int list = []
+let mutable resultSet:int list = [] 
 
 let [<Given>] ``a collection from (.*) to (.*)`` (start:int)(en:int) = 
-    simpleCollection<-[start..en]
+    simpleCollection <- [start..en]
       
-let [<When>] ``I ask what number (.*) is`` (n:int) =  
-    numberToEvaluate <- n
+let [<When>] ``I ask if the collection has items divisible by (.*)`` (n:int) =  
+    //TODO: Add your code here to populate the result set with numbers divisble by 'n'
+    ()
       
-let [<Then>] ``It should say it is (.*)`` (res:string) =  
-//Your code here   
-    let actual = "odd"
-    Assert.AreEqual(res,actual)
+let [<Then>] ``the result set length should be (.*)`` (len:int) =  
+    Assert.AreEqual(len,resultSet.Length)
+
+let [<Then>] ``the set should contain (.*)`` (expected:int) =  
+    let doesExist=resultSet|> List.exists (fun x-> x= expected)
+    Assert.IsTrue(doesExist, "Could not find it")
