@@ -22,7 +22,12 @@ Topics Covered
 Exercises
 =========
 
-1] add couple of integer division exercises
-2] Fizzbuzz
++ add couple of integer division exercises
++ Fizzbuzz
 
-Dont remember
+
+To be added on to the basics
+=> basic string manipulation
+=> basic pattern matching
+=> various boolean operators
+
