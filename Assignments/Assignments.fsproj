@@ -63,6 +63,10 @@
       <SubType>
       </SubType>
     </Compile>
+    <Content Include="FibonacciFeature.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="FibonacciStepDefinition.fs" />
     <Compile Include="Fixtures.fs" />
   </ItemGroup>
   <ItemGroup>
