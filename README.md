@@ -63,6 +63,7 @@ Assignments
 ------------
 - Fizz buzz
 - Christmas tree problem
+- build a telephone registry application
 
 For assignments, look at:
 - coursera scala classes
