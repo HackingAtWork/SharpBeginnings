@@ -12,19 +12,19 @@ Scenario 1: The one where we compute the first 5 fibonacci numbers
 Scenario 2: The one where we find the fibonacci number of 1
 	Given a fibonacci sequence calculator
   When I ask for the Fibonacci number of 1
-  Then the result should be 1
+  Then the fib result should be 1
 
 Scenario 3: The one where we find the fibonacci number of 2
 	Given a fibonacci sequence calculator
   When I ask for the Fibonacci number of 2
-  Then the result should be 1
+  Then the fib result should be 1
 
 Scenario 4: The one where we find the fibonacci number of 3
 	Given a fibonacci sequence calculator
   When I ask for the Fibonacci number of 3
-  Then the result should be 2
+  Then the fib result should be 2
 
 Scenario 5: The one where we find the fibonacci number of 4
 	Given a fibonacci sequence calculator
   When I ask for the Fibonacci number of 4
-  Then the result should be 3
+  Then the fib result should be 3

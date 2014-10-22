@@ -7,3 +7,5 @@ Scenario 1: The one where a the collection has numbers divisible by 6
   Then the result set length should be 2
   And the set should contain 12
   And the set should contain 6
+
+

@@ -12,7 +12,9 @@ let [<Given>] ``a collection from (.*) to (.*)`` (start:int)(en:int) =
       
 let [<When>] ``I ask if the collection has items divisible by (.*)`` (n:int) =  
     //TODO: Add your code here to populate the result set with numbers divisble by 'n'
-    ()
+    let boom= simpleCollection |>  List.filter (fun x -> x % n = 0) 
+    resultSet <- boom
+   
       
 let [<Then>] ``the result set length should be (.*)`` (len:int) =  
     Assert.AreEqual(len,resultSet.Length)

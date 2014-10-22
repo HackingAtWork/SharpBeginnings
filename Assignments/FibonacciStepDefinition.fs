@@ -8,24 +8,26 @@ let mutable resultSet:int list = []
 let mutable fibonnaciNumber:int = -1
 
 let rec fibonnaci x = 
-  //todo: implement
-  -1000
+    //todo: implement
+        if x = 1 then 1
+        elif x = 2 then 1
+        else fibonnaci (x-1) + fibonnaci (x-2) 
 
 let fibonnaciSequence x = 
   //todo: implement
   []
 
-let [<Given>] ``Given a fibonacci sequence calculator`` ()= 
+let [<Given>] ``a fibonacci sequence calculator`` ()= 
     ()
       
-let [<When>] ``When I ask for the first (.*) numbers in the sequence`` (n:int) =  
+let [<When>] ``I ask for the first (.*) numbers in the sequence`` (n:int) =  
     resultSet <- fibonnaciSequence n
    
-let [<When>] ``When I ask for the Fibonacci number of (.*)`` (n:int) =  
+let [<When>] ``I ask for the Fibonacci number of (.*)`` (n:int) =  
     fibonnaciNumber <- fibonnaci n
 
-let [<Then>] ``the fib result set length should be (.*)`` (len:int) =  
-    Assert.AreEqual(len,resultSet.Length)
+let [<Then>] ``the fib result should be (.*)`` (expected:int) =  
+    Assert.AreEqual(expected, fibonnaciNumber)
 
 let [<Then>] ``the fib set should contain (.*)`` (expected:int) =  
     let doesExist=resultSet|> List.exists (fun x-> x= expected)
