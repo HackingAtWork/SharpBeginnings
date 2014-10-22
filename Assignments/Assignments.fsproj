@@ -56,10 +56,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <Compile Include="StockStepDefinitions.fs" />
-    <Content Include="StockFeature.txt">
+    <Content Include="SimpleCollectionFeature.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Compile Include="SimpleCollectionStepDefinitions.fs">
+      <SubType>
+      </SubType>
+    </Compile>
     <Compile Include="Fixtures.fs" />
   </ItemGroup>
   <ItemGroup>

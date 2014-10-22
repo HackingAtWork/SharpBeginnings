@@ -22,4 +22,4 @@ type FeatureFixture (source:string) =
         let s = File.OpenText(Path.Combine(Directory.GetCurrentDirectory(),source))
         definitions.GenerateScenarios(source,s)
 
-type StockFeature () = inherit FeatureFixture("StockFeature.txt")
+type StockFeature () = inherit FeatureFixture("SimpleCollectionFeature.txt")

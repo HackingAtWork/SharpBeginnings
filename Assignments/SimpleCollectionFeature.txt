@@ -1,0 +1,7 @@
+﻿
+Feature: Simple Collection learning
+
+Scenario 1: The one where you find that 6 is even 
+	Given a collection from 1 to 15
+	When I ask what number 6 is
+	Then It should say it is even
