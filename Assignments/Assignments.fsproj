@@ -67,6 +67,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Compile Include="FibonacciStepDefinition.fs" />
+    <Content Include="StringManipulationFeature.txt" />
+    <Compile Include="StringManipulationStepDefinition.fs" />
     <Compile Include="Fixtures.fs" />
   </ItemGroup>
   <ItemGroup>

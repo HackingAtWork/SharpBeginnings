@@ -1,0 +1,7 @@
+﻿Feature: String Nanipulation
+
+Scenario 2: The one where we reverse a string 
+	Given a fibonacci sequence calculator
+  When I ask for the Fibonacci number of 1
+  Then the fib result should be 1
+
