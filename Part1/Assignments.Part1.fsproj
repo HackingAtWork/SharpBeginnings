@@ -12,14 +12,14 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>SharpBeginnings.Tests</Name>
+    <Name>Assignments.Part1</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <Tailcalls>false</Tailcalls>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\builds\assignments\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -56,20 +56,30 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Content Include="SortingFeature.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FibonacciFeature.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="SimpleCollectionFeature.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ReverseFeature.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="SortingStepDefinitions.fs" />
+    <Compile Include="FibonacciStepDefinition.fs" />
     <Compile Include="SimpleCollectionStepDefinitions.fs">
       <SubType>
       </SubType>
     </Compile>
-    <Content Include="FibonacciFeature.txt">
+    <Compile Include="ReverseStepDefinition.fs" />
+    <Compile Include="Fixtures.fs" />
+    <Content Include="AnagramFeature.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Compile Include="FibonacciStepDefinition.fs" />
-    <Content Include="StringManipulationFeature.txt" />
-    <Compile Include="StringManipulationStepDefinition.fs" />
-    <Compile Include="Fixtures.fs" />
+    <Compile Include="AnagramStepDefinition.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsUnit.NUnit">

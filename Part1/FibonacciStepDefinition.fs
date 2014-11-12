@@ -8,18 +8,19 @@ let mutable resultSet:int seq = {0..1}
 let mutable fibonnaciNumber:int = -1
 let upperBound = 10000
 
-let rec fibonnaci x = 
-    match x with
-    | 1 | 2 -> 1
-    | x -> fibonnaci (x-1) + fibonnaci (x-2) 
-    
-let fibonnaciSequence x=
+let rec fibonnaci number = 
+   //todo: write a recursive implementation of the fibonacci algorithm
+   // see http://en.wikipedia.org/wiki/Fibonacci_number
+   number
+
+let fibonnaciSequence n=
+  //todo: using the fibonacci number algorithm, build a fibonacci sequence of the first 'n' numbers
+  //hints
   // need a range of numbers
   // need to convert that list of numbers in to fibonacci
   // need to select first x fibonacci numbers
   {0..1}
     
-
 let [<Given>] ``a fibonacci sequence calculator`` ()= 
     ()
       

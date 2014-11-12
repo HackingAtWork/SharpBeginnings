@@ -1,0 +1,9 @@
+﻿
+Feature: Sorting Collection learning
+
+Scenario 1: The one where we sort a collection of numbers
+   Given a random collection
+   When I sort that collection
+   Then the sorting result should be sorted
+
+
