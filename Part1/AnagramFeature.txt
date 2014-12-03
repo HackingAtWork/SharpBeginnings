@@ -1,0 +1,12 @@
+﻿Feature: Anagram
+
+Scenario 1: The one where we find that kevin is not an anagram
+  Given a string kevin
+  When I check if its an anagram
+  Then the answer should be false
+
+Scenario 2: The one where we find that lal is an anagram
+  Given a string lal
+  When I check if its an anagram
+  Then the answer should be true
+
