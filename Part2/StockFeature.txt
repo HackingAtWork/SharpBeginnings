@@ -1,0 +1,6 @@
+﻿Feature: Refunded or replaced items should be returned to stock
+
+Scenario 1: The one where we reverse a string 
+  Given a reversable string kaboom
+  When I reverse it
+  Then the reversed string should be moobak
