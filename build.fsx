@@ -31,11 +31,6 @@ let validateTargetBuilder x =
                OutputFile = assignmentDir + "TestResults.xml" })
   )
 
-
-Target "CheckAssignments" (fun _ ->
-       trace "Validating all tests"
-       )
-
 let depencyTargetBuilder x= 
   (sprintf "buildPart%d") x 
     ==> (sprintf "validatePart%d") x
@@ -46,8 +41,14 @@ parts |> List.iter buildTargetBuilder
 parts |> List.iter validateTargetBuilder
 parts |> List.iter (fun x -> depencyTargetBuilder x |> ignore)
 
-"Clean"          
-  ==> "CheckAssignments" 
+
+Target "Graduate" (fun _ ->
+  trace "Congrats!!!. You passed the class!!"
+)
+
+"validatePart1"          
+  ==> "validatePart2"
+  ==> "Graduate" 
 
 
-RunTargetOrDefault "CheckAssignments"
+RunTargetOrDefault "Graduate"
