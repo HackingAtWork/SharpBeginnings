@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>Assignments.Part1</Name>
+    <Name>Part1</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,9 +65,10 @@
     <Content Include="SimpleCollectionFeature.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ReverseFeature.txt">
+    <Content Include="LeapYearFeature.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Compile Include="LeapYearStepDefinition.fs" />
     <Compile Include="SortingStepDefinitions.fs" />
     <Compile Include="FibonacciStepDefinition.fs" />
     <Compile Include="SimpleCollectionStepDefinitions.fs">
@@ -80,6 +81,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Compile Include="AnagramStepDefinition.fs" />
+    <Content Include="ReverseFeature.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsUnit.NUnit">

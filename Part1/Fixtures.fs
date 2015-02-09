@@ -9,7 +9,8 @@ open AssignmentHelper
 let assembly = Assembly.GetExecutingAssembly() 
 let definitions = new StepDefinitions(assembly)
 
-type FibonacciFeature () = inherit FeatureFixture("FibonacciFeature.txt", definitions)
+type LeapYear() = inherit FeatureFixture("LeapYearFeature.txt", definitions)
+//type FibonacciFeature () = inherit FeatureFixture("FibonacciFeature.txt", definitions)
 //type SortingFeature () = inherit FeatureFixture("SortingFeature.txt", definitions)
 //type CollectionFeature () = inherit FeatureFixture("SimpleCollectionFeature.txt", definitions)
 //type AnagramFeature () = inherit FeatureFixture("AnagramFeature.txt", definitions)

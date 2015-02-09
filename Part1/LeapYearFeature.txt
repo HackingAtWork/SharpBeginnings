@@ -1,0 +1,54 @@
+﻿Feature: Leap year
+
+
+
+
+Scenario 1: The one where 1804 is a leap year
+  Given the year 1804
+  When I do my leap year detemination
+  Then I shall find that it is a leap year
+
+Scenario 2: The one where 2000 is a leap year
+  Given the year 2000
+  When I do my leap year detemination
+  Then I shall find that it is a leap year
+
+Scenario 3: The one where 2400 is a leap year
+  Given the year 2400
+  When I do my leap year detemination
+  Then I shall find that it is a leap year
+
+Scenario 4: The one where 2112 is a leap year
+  Given the year 2112
+  When I do my leap year detemination
+  Then I shall find that it is a leap year
+
+Scenario 5: The one where 2002 is not a leap year
+  Given the year 2002
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
+
+Scenario 6: The one where 2006 is not a leap year
+  Given the year 2006
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
+
+Scenario 7: The one where 1998 is not a leap year
+  Given the year 1998
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
+
+Scenario 8: The one where 1805 is not a leap year
+  Given the year 1805
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
+
+Scenario 9: The one where 2022 is not a leap year
+  Given the year 2022
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
+
+Scenario 10: The one where 2370 is not a leap year
+  Given the year 2370
+  When I do my leap year detemination
+  Then I shall find that it is not a leap year
